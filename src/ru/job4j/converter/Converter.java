@@ -19,7 +19,7 @@ public class Converter {
         System.out.println("1 euro are " + euro + " rubless ");
         int in = 2;
         int expected = 120;
-        int out =dollarToRuble(in);
+        int out = dollarToRuble(in);
         boolean passed = expected == out;
         System.out.println("120 rubles are 2 dollars. Test result : " + passed);
         int in1 = 2;

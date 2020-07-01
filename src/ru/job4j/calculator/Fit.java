@@ -4,14 +4,14 @@ public class Fit {
 
     @SuppressWarnings("checkstyle:WhitespaceAround")
     public static double manWeight(double height) {
-        double rsl = (176-100) * 1.15;
+        double rsl = (176 - 100) * 1.15;
         return rsl;
     }
 
 
     @SuppressWarnings("checkstyle:WhitespaceAround")
     public static double womanWeight(double height) {
-        double rsl = (166-110) * 1.15;
+        double rsl = (166 - 110) * 1.15;
         return rsl;
     }
 
