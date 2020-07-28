@@ -1,20 +1,23 @@
-package ru.job4j.condition;
+package ru.job4j.converter;
 
-import static org.junit.Assert.assertThat;
-import static org.hamcrest.Matchers.is;
-
+import org.junit.Assert;
 import org.junit.Test;
 
 public class PointTest {
 
     @Test
-    public void whenX1Y1Zero() {
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 2;
-        int y2 = 0;
-        double expected = 2;
-        double rsl = Point.distance(x1, y1, x2, y2);
-        assertThat(rsl, is(expected));
+    public void whenConvert2EuroThen140Rbl() {
+        int in = 2;
+        int expected = 140;
+        int out = Converter.euroToRuble(in);
+        Assert.assertEquals(expected, out);
+    }
+
+    @Test
+    public void whenConvert3DollarThen180Rbl() {
+        int in = 3;
+        int expected = 180;
+        int out = Converter.dollarToRuble(in);
+        Assert.assertEquals(expected, out);
     }
 }
