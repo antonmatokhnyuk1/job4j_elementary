@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Triangle {
 
     public static void main(String[] args) {
+        System.out.println("введите стороны треугольника:");
         double ab, ac, bc;
         Scanner in = new Scanner(System.in);
         ab = in.nextDouble();
