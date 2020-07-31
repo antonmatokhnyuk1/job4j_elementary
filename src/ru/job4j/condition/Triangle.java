@@ -11,9 +11,10 @@ public class Triangle {
         ab = in.nextDouble();
         ac = in.nextDouble();
         bc = in.nextDouble();
-        if (ab + ac > bc && ac + bc > ab && ab + bc > ac) System.out.println("треугольник существует");
-        else System.out.println("треугольник не существует");
-
-        in.close();
+        if (ab + ac > bc && ac + bc > ab && ab + bc > ac) {
+            System.out.println("треугольник существует");
+        } else {
+            System.out.println("треугольник не существует");
+        }
     }
 }
