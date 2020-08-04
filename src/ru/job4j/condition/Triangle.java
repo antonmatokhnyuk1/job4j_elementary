@@ -1,20 +1,20 @@
 package ru.job4j.condition;
 
-import java.util.Scanner;
-
 public class Triangle {
 
-    public static void main(String[] args) {
-        System.out.println("введите стороны треугольника:");
-        double ab, ac, bc;
-        Scanner in = new Scanner(System.in);
-        ab = in.nextDouble();
-        ac = in.nextDouble();
-        bc = in.nextDouble();
+    public static boolean exist(double ab, double ac, double bc) {
         if (ab + ac > bc && ac + bc > ab && ab + bc > ac) {
             System.out.println("треугольник существует");
         } else {
-            System.out.println("треугольник не существует");
+            System.out.println("треугольник не сушествует");
+
         }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        Triangle.exist(2.0, 2.0, 2.0);
+
     }
 }
+
